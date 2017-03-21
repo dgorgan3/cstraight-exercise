@@ -1,0 +1,225 @@
+/* Reset */
+html, body, div, h1, h2, h3, h4, h5, h6, p {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+#main {
+  width: 100%;
+  max-width: 68.75em;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translate(-50%);
+  margin: 0 auto;
+}
+
+.main-heading {
+  font-size: 1.875em;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.1875em;
+  margin-bottom: 1.12500em;
+  text-align: center;
+}
+
+.main-heading .company-name {
+  color: #619845;
+}
+
+.cards-list-section {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cards-list-section:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.cards {
+  width: 23.5%;
+  margin: 0 0.7%;
+  float: left;
+  background: url('../images/card_shape.png')no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  padding: 0 0.9375em 1.5625em;
+  /*transition: all 300ms linear;*/
+}
+
+.card-icon {
+  position: relative;
+  top: 0.625em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 5.625em;
+  height: 5.625em;
+}
+
+.card-icon.first-icon {
+  background: url(../images/clock_icon.svg)no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
+.card-icon.second-icon {
+  background: url(../images/dollar_icon.svg)no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
+.card-icon.third-icon {
+  background: url(../images/chat_icon.svg)no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
+.card-icon.fourth-icon {
+  background: url(../images/thumbs_up_icon.svg)no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
+
+.card-copy-wrapper {
+  height: 15.625em;
+  margin-top: 1.5625em;
+  padding: 0 0.35em;
+}
+
+.card-title {
+  color: #619845;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.25em;
+
+}
+
+.card-subtitle {
+  display: block;
+  color: #113d56;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.125em;
+  margin: 0.3em 0 0.625em;
+  padding: 0 1.875em;
+}
+
+.card-description {
+  font-weight: 400;
+  color: #646464;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.btn {
+  width: 340px;
+  height: 60px;
+  margin: 3.125em 0.625em;
+  text-transform: uppercase;
+  border: transparent;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn.learn-more {
+  background-color: #113d56;
+}
+
+.btn.apply-now {
+  background-color: #0c8343;
+}
+
+
+/* Small Laptop & Tablet */
+@media screen and (max-width: 1110px) {
+
+  #main {
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .main-heading {
+    font-size: 1.675em;
+    margin-top: 2em;
+    padding: 0 1em;
+  }
+
+  .cards {
+    width: 48%;
+    margin: 1%;
+    float: left;
+    background: url('../images/card_shape.png')no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    padding: 0 0.9375em 1.5625em;
+  }
+
+  .card-copy-wrapper {
+    width: 13.5em;
+    margin: 1.25em auto;
+  }
+
+  .card-subtitle {
+    padding: 0 .875em;
+  }
+
+  .btn {
+    width: 18.25em;
+    margin: 2.125em 0.625em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .btn {
+    width: 65%;
+    margin: 1em 0.625em;
+    font-size: 1.20em;
+  }
+}
+
+/* Small Tablet and Mobile */
+@media screen and (max-width: 650px) {
+
+  #main {
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .main-heading {
+    font-size: 1.475em;
+    margin-top: 2em;
+    padding: 0 1.5em;
+  }
+
+  .cards {
+    width: 100%;
+    margin: 1%;
+    float: left;
+    background: url('../images/card_shape.png')no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    padding: 0 0.9375em 1.5625em;
+  }
+
+  .btn {
+    margin: 1em auto;
+    font-size: 1em;
+  }
+}
